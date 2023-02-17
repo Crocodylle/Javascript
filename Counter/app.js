@@ -1,13 +1,13 @@
-(function() { 
+(function() {   
 
-    const buttons = document.querySelectorAll('.counterBtn')
-    let count = 0 
+    const buttons = document.querySelectorAll('.counterBtn') // get buttons from html and point to buttons 
+    let count = 0  // initializer a counter 
 
-    buttons.forEach(function(button) {
+    buttons.forEach(function(button) {  // a function calling button
 
-        button.addEventListener('click', function() {
+        button.addEventListener('click', function() {  //listening the buttons 
        
-          if(button.classList.contains('prevBtn')){ 
+          if(button.classList.contains('prevBtn')){  
         count-- 
         } else if(button.classList.contains('nextBtn')){ 
          count++
