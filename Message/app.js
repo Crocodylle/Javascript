@@ -13,7 +13,7 @@
     if(message.value === '') { 
         feedback.classList.add('show')
         setTimeout(function() {
-            feedback.classlist.remove('show')
+            feedback.classList.remove('show')
         }, 4000) 
       } else { 
             messageContent.textContent = message.value
