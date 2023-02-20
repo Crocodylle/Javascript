@@ -14,7 +14,7 @@ body {
 }
 
 img { 
-    width: 100%;
+    width: 90%;
     height: 100%;
 }
 
@@ -69,11 +69,12 @@ img {
 
 .intro .hero{ 
 
-    direction: flex;
+    display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
     padding: 8rem 7rem 0 7rem;
+    transform: translateY(100%);
 }
 
 .intro .hero .left-hero { 
@@ -90,3 +91,12 @@ img {
     width: 40%;
 }
 
+.slider{ 
+    position: fixed;
+    top:0; 
+    left: 0;
+    background-color: #18181A;
+    width: 100%;
+    height: 100%;
+    transform: translate(100%);
+}
