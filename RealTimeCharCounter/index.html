@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Real-Time Character Counter</title>
+</head>
+<body class="flex justify-center box-content h-[100%] w-[100%] bg-orange-500 m-10"> 
+     <div class=" container  h-62 w-34 p-4 border-4 bg-red-400">
+         <label for="message" class="block mb-2 text-lg font-medium text-gray-900 dark:text-white">Real-time Charater Counter</label>
+         <textarea maxlength=50 name="message" id="message" rows="10" class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Leave a comment..."></textarea>
+         <span class="flex space-x-10">
+            <p id="tChar" class="font-semibold">Total Characters: 0</p>
+            <p id="rChar" class="font-semibold"  >Remaining: 50</p>
+         </span>     
+     </div>
+    
+     <script src="app.js"></script>
+</body>
+</html>
