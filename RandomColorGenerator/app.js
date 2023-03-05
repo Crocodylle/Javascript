@@ -1,37 +1,34 @@
-
-
-const spans   = document.querySelectorAll("span")
-const span = document.querySelector("span")
  
 const div   = document.querySelector("div")
-
+const ispan = document.createElement("span");
 
 
 function gerandocores() { 
 
-  let colorContainerEl = document.createElement("p");
-    for(var i=0; i<spans.length; i++)
-     { 
-        
+  for(x=0; x<=35; x++) {
+    
+  const ispan = document.createElement("span");
+  ispan.classList.add("boxes");
+  div.appendChild(ispan)
+
+          
     let r = Math.floor(Math.random() * 255);
     let g = Math.floor(Math.random() * 255);
     let b = Math.floor(Math.random() * 255);
     console.log( r ,"and g", g ,"and b", b);
 
-    spans[i].style.backgroundColor = `rgb(${r},${g},${b}`
+    ispan.style.backgroundColor = `rgb(${r},${g},${b}`;
     
     
     const colorContainerEl = document.createElement("p");
     colorContainerEl.classList.add("color-container"); 
-    spans[i].append(colorContainerEl);
+    ispan.append(colorContainerEl);
 
     colorContainerEl.innerText = `Color: r(${r}), g(${g}), b(${b})`;
-        
-         
-      }
+            
   
     }
+}
  
-
 
 gerandocores(); 
